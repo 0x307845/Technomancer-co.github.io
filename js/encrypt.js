@@ -18,5 +18,10 @@ function encrypt_invite(str) {
   for(let i = 0 ; i < str.length; i++){
     decipher += decoded[str[i]];
   }
-  return decipher;
+  decipher.split('')
+  let result = decipher.split('');
+  result[1] = result[1].toUpperCase();
+  result[5] = result[5].toUpperCase();
+  result = result.join('');
+  return result;
 }
